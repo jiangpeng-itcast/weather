@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.0",
-	"appid": "touristappid",
-	"projectname": "%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2",
+	"appid": "wx90cd26af32c115ef",
+	"projectname": "weather_",
 	"condition": {
 		"search": {
 			"current": -1,
