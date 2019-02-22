@@ -1,0 +1,27 @@
+var commonJs = {
+
+  // 封装回显指数名称函数
+  getIndexName: function (arg) {
+    if (!arg || arg === 'air') return '';
+    var str = '';
+    if (arg === 'cw') {
+      str = '洗车指数';
+    } else if (arg === 'comf') {
+      str = '舒适度指数';
+    } else if (arg === 'drsg') {
+      str = '穿衣指数';
+    } else if (arg === 'flu') {
+      str = '感冒指数';
+    } else if (arg === 'sport') {
+      str = '运动指数';
+    } else if (arg === 'trav') {
+      str = '旅游指数';
+    } else if (arg === 'uv') {
+      str = '紫外线指数';
+    }
+    return str;
+  }
+};
+module.exports = {
+  getIndexName: commonJs.getIndexName
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="about">
+  <text>产品名称：天气预报</text>
+  <text>版本号：{{v}}</text>
+  <text>数据来源：和风天气</text>
+  <text>开发时间：2019年2月</text>
+  </view>
+  <view class="about aboutme">
+    <text class="title">作者：蒋鹏(Avery)</text>
+    <text>网站: https://www.jianshu.com/u/7861a0f02933</text>
+    <text class="title">邮箱：13120009613@163.com</text>
+    <text>简书: https://www.jianshu.com/u/7861a0f02933</text>
+    <text class="title">GitHub: https://github.com/jiangpeng-itcast</text>
+  </view>
+</view>

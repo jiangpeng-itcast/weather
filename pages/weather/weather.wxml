@@ -1,0 +1,39 @@
+<!--weather.wxml-->
+<wxs module="common" src="../../utils/common.wxs"></wxs>
+<view class="container">
+  <view class="city" bindtap="bindViewTap">
+    <image class="dwicon" src='../../images/curcity.png'></image>
+    <text>当前城市：{{basic.location}}</text>
+    
+    <text class="update">最近更新时间：{{update.loc}}</text>
+    <image class="zbicon" src='../../images/update.png'></image>
+  </view>
+
+  <view class="weather" bindtap="showcurid">
+    <image class="section" src="{{now.cond.src}}"></image>
+    <view class="aside">
+      <text class="temperature">{{now.tmp}}℃</text>
+      <text>{{now.cond.txt}} | {{now.wind.dir}}{{now.wind.sc}}级</text>
+    </view>
+    <view class="other">
+      <view class="border_r"><text class="title">相对湿度</text><text class="info">{{now.hum}}%</text></view>
+      <view class="border_r"><text class="title">降水量</text><text class="info">{{now.pcpn}}mm</text></view>
+      <view><text class="title">能见度</text><text class="info">{{now.vis}}km</text></view>
+    </view>
+  </view>
+
+  <view class="suggestion">
+    <text class="title">生活指数</text>
+      <view class="list" wx:for="{{suggestion}}" wx:for-index="key" wx:for-item="value" wx:if="{{value.type != 'air'}}">
+        <view class="list_l">
+          <image src="../../images/icon/{{value.type}}.png"></image>
+          <text>{{common.getIndexName(value.type)}}</text>
+        </view>
+        <view class="list_r">
+          <text class="list_t">{{value.brf}}</text>
+          <text>{{value.txt}}</text>
+        </view>
+      </view>
+
+  </view>
+</view>
