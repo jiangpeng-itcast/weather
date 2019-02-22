@@ -6,7 +6,7 @@ Page({
   //2、系统事件部分
   onShow:function(){
     var that = this;
-    wx.showToast({title: '加载中',icon: 'loading',duration: 300})//设置加载模态框
+    wx.showToast({title: '加载中',icon: 'loading',duration: 3000})//设置加载模态框
     that.getnow(function(d){//获取到数据的回调函数
     console.log(d, 'aasasas')
       wx.hideToast();
